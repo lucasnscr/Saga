@@ -1,5 +1,3 @@
-Implementing Saga with Spring, Axon, Docker and Kubernetes
-
 ### Project description
 🚀 This project aims to create an application with microservices architecture by applying the Saga(Orchestration) pattern with Axon and Spring for all development. Dockerfile files are available for virtualization of microservices and within each service there is a deploy folder for running services in a Kubernetes cluster.
 
@@ -45,10 +43,3 @@ Pros
 
 
 Here we finish a Project implementing Saga(Orchestration) with Axon.
-
-
-
-
-
-
-
