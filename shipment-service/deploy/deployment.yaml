@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shipment-service
+  labels:
+    app: shipment-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shipment-service
+  template:
+    metadata:
+      labels:
+        app: shipment-service
+    spec:
+      containers:
+        - name: user-service
+          image: saga/shipment-service:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9094
